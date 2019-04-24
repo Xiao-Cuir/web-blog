@@ -40,23 +40,23 @@ export const constantRouterMap = [
   },
 
   {
-    path: '/example',
+    path: '/everycss',
     component: Layout,
-    redirect: '/example/table',
+    redirect: '/everycss/cheeseburger',
     name: 'Example',
-    meta: { title: 'CSS', icon: 'example' },
+    meta: { title: 'everyday-css', icon: 'example' },
     children: [
       {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        path: 'cheeseburger',
+        name: 'cheeseburger',
+        component: () => import('@/views/everycss/cheeseburger/index'),
+        meta: { title: '一个DIV的芝士汉堡制作' }
       },
       {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        path: 'polygon',
+        name: 'polygon',
+        component: () => import('@/views/everycss/polygon/index'),
+        meta: { title: 'CSS绘制各种几何形状' }
       }
     ]
   },
