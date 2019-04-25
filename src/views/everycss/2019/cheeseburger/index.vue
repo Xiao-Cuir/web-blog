@@ -12,7 +12,10 @@ export default {
   },
   data() {
     return {
-      iframeurl: '111'
+      iframeurl: 'http://118.24.232.149/everyday-css/cheeseburger/cheeseburger.html',
+      giturl: 'https://github.com/Jasonccj/css-learning/tree/master/everydayCss/cheeseburger',
+      jujinurl: '111',
+      mokeurl: '1111'
     }
   }
 }

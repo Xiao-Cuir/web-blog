@@ -30,7 +30,7 @@ export const constantRouterMap = [
     path: '',
     component: Layout,
     redirect: '/dashboard',
-    name: 'Dashboard',
+    name: 'dashboard',
     children: [{
       path: 'dashboard',
       component: () => import('@/views/dashboard/index'),
@@ -42,21 +42,29 @@ export const constantRouterMap = [
   {
     path: '/everycss',
     component: Layout,
-    redirect: '/everycss/cheeseburger',
+    redirect: '/everycss/2019',
     name: 'Example',
-    meta: { title: 'everyday-css', icon: 'example' },
+    meta: { title: '每周CSS', icon: 'example' },
     children: [
       {
-        path: 'cheeseburger',
-        name: 'cheeseburger',
-        component: () => import('@/views/everycss/cheeseburger/index'),
-        meta: { title: '一个DIV的芝士汉堡制作' }
-      },
-      {
-        path: 'polygon',
-        name: 'polygon',
-        component: () => import('@/views/everycss/polygon/index'),
-        meta: { title: 'CSS绘制各种几何形状' }
+        path: '2019',
+        name: '2019',
+        meta: { title: '2019' },
+        component: () => import('@/views/everycss/2019/index'),
+        children: [
+          {
+            path: 'cheeseburger',
+            name: 'cheeseburger',
+            component: () => import('@/views/everycss/2019/cheeseburger/index'),
+            meta: { title: '1周：一个DIV的汉堡制作' }
+          },
+          {
+            path: 'polygon',
+            name: 'polygon',
+            component: () => import('@/views/everycss/2019/polygon/index'),
+            meta: { title: '2周：CSS绘制各种几何形状' }
+          }
+        ]
       }
     ]
   },
