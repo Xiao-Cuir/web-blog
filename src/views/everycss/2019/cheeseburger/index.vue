@@ -1,21 +1,21 @@
 <template>
   <div>
-    <webblob :iframeurl="iframeurl" />
+    <webblog :iframeurl="iframeurl" :giturl="giturl" :jujinurl="jujinurl" :mokeurl="mokeurl" />
   </div>
 </template>
 <script>
-import Webblob from '@/components/Webblob'
+import Webblog from '@/components/Webblog'
 
 export default {
   components: {
-    Webblob
+    Webblog
   },
   data() {
     return {
-      iframeurl: 'http://118.24.232.149/everyday-css/cheeseburger/cheeseburger.html',
-      giturl: 'https://github.com/Jasonccj/css-learning/tree/master/everydayCss/cheeseburger',
-      jujinurl: '111',
-      mokeurl: '1111'
+      iframeurl: 'http://118.24.232.149:8081/everyday-css/cheeseburger/cheeseburger.html',
+      giturl: 'https://github.com/Xiao-Cuir/week-css/tree/master/cheeseburger',
+      jujinurl: 'https://juejin.im/post/5c66593de51d450ac119c35a',
+      mokeurl: 'https://www.imooc.com/article/278478'
     }
   }
 }

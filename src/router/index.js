@@ -63,6 +63,12 @@ export const constantRouterMap = [
             name: 'polygon',
             component: () => import('@/views/everycss/2019/polygon/index'),
             meta: { title: '2周：CSS绘制各种几何形状' }
+          },
+          {
+            path: 'ceshi',
+            name: 'ceshi',
+            component: () => import('@/views/everycss/2019/ceshi/index'),
+            meta: { title: '测试' }
           }
         ]
       }
