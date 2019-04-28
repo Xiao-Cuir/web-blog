@@ -62,10 +62,16 @@
 </template>
 <script>
 export default {
-  mounted() {
+  created() {
     window.addEventListener('scroll', this.callbackFunc)
     window.addEventListener('load', this.callbackFunc)
+  },
+  mounted() {
     this.callbackFunc()
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.callbackFunc)
+    window.removeEventListener('load', this.callbackFunc)
   },
   methods: {
     isElementInViewport: function(el) {
@@ -142,7 +148,7 @@ export default {
       position: relative;
       background: #fff;
       width:400px;
-      padding: 20px;
+      padding: 15px;
       bottom: 0;
       border-radius: 5px;
       align-items: center;
