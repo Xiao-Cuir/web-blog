@@ -44,7 +44,7 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/everycss/2019',
     name: 'Example',
-    meta: { title: '每周CSS', icon: 'example' },
+    meta: { title: 'Week-CSS', icon: 'example' },
     children: [
       {
         path: '2019',
