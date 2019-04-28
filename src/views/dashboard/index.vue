@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <Timeline />
   </div>
 </template>
@@ -15,7 +15,4 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-.container {
-  padding: 20px 20px 20px 20px;
-}
 </style>
