@@ -62,11 +62,9 @@
 </template>
 <script>
 export default {
-  created() {
+  mounted() {
     window.addEventListener('scroll', this.callbackFunc)
     window.addEventListener('load', this.callbackFunc)
-  },
-  mounted() {
     this.callbackFunc()
   },
   destroyed() {
@@ -84,6 +82,7 @@ export default {
       )
     },
     callbackFunc: function() {
+      console.log('加载callback')
       var items = document.querySelectorAll('.timeline li')
       for (var i = 0; i < items.length; i++) {
         if (this.isElementInViewport(items[i])) {

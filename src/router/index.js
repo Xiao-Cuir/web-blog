@@ -40,11 +40,50 @@ export const constantRouterMap = [
   },
 
   {
+    path: '/form',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: '基础业务组件(暂定)',
+        component: () => import('@/views/form/index'),
+        meta: { title: '个人博客(暂定)', icon: 'form' }
+      }
+    ]
+  },
+
+  {
+    path: '/form1',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: '基础组件(暂定)',
+        component: () => import('@/views/update/index'),
+        meta: { title: '基础组件(暂定)', icon: 'form' }
+      }
+    ]
+  },
+
+  {
+    path: '/form6',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: '常用业务组件(暂定)',
+        component: () => import('@/views/update/index'),
+        meta: { title: '常用业务组件(暂定)', icon: 'form' }
+      }
+    ]
+  },
+
+  {
     path: '/everycss',
     component: Layout,
     redirect: '/everycss/2019',
     name: 'Example',
-    meta: { title: 'Week-CSS', icon: 'example' },
+    meta: { title: 'week-CSS', icon: 'example' },
     children: [
       {
         path: '2019',
