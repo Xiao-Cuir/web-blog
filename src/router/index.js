@@ -46,7 +46,7 @@ export const constantRouterMap = [
       {
         path: 'index',
         name: '基础业务组件(暂定)',
-        component: () => import('@/views/form/index'),
+        component: () => import('@/views/update/index'),
         meta: { title: '个人博客(暂定)', icon: 'form' }
       }
     ]
@@ -92,22 +92,10 @@ export const constantRouterMap = [
         component: () => import('@/views/everycss/2019/index'),
         children: [
           {
-            path: 'cheeseburger',
-            name: 'cheeseburger',
-            component: () => import('@/views/everycss/2019/cheeseburger/index'),
-            meta: { title: '1周：一个DIV的汉堡制作' }
-          },
-          {
-            path: 'polygon',
-            name: 'polygon',
-            component: () => import('@/views/everycss/2019/polygon/index'),
-            meta: { title: '2周：CSS绘制几何形状' }
-          },
-          {
             path: 'timeline',
             name: 'timeline',
             component: () => import('@/views/everycss/2019/timeline/index'),
-            meta: { title: '3周：垂直时间轴代码' }
+            meta: { title: '1周：垂直时间轴代码' }
           }
         ]
       }
