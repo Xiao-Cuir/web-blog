@@ -2,22 +2,52 @@
   <div class="container">
     <div class="block">
       <el-timeline>
-        <el-timeline-item timestamp="2019/4/24" placement="top">
+        <el-timeline-item timestamp="1.0.2" placement="top" color="#0bbd87">
           <el-card>
-            <h4>更新 上传2小节到每周CSS2019专栏</h4>
-            <p>Xiao-Cuir 提交于 2018/4/24 21:35</p>
+            <h5>新增：</h5>
+            <ol>
+              <li>122</li>
+              <li>2312312</li>
+              <li>2312312</li>
+            </ol>
+            <h5>修改：</h5>
+            <ol>
+              <li>122</li>
+              <li>2312312</li>
+              <li>2312312</li>
+            </ol>
           </el-card>
         </el-timeline-item>
-        <el-timeline-item timestamp="2019/4/13" placement="top">
+        <el-timeline-item timestamp="1.0.1" placement="top" color="#0bbd87">
           <el-card>
-            <h4>更新 修改框架路由及webpack部分配置</h4>
-            <p>Xiao-Cuir 提交于 2019/4/13 22:03</p>
+            <h5>新增：</h5>
+            <ol>
+              <li>122</li>
+              <li>2312312</li>
+              <li>2312312</li>
+            </ol>
+            <h5>修改：</h5>
+            <ol>
+              <li>122</li>
+              <li>2312312</li>
+              <li>2312312</li>
+            </ol>
           </el-card>
         </el-timeline-item>
-        <el-timeline-item timestamp="2019/4/1" placement="top">
+        <el-timeline-item timestamp="1.0.0" placement="top" color="#0bbd87">
           <el-card>
-            <h4>创建 网站基础模板创建</h4>
-            <p>Xiao-Cuir 提交于 2019/4/1 22:15</p>
+            <h5>新增：</h5>
+            <ol>
+              <li>122</li>
+              <li>2312312</li>
+              <li>2312312</li>
+            </ol>
+            <h5>修改：</h5>
+            <ol>
+              <li>122</li>
+              <li>2312312</li>
+              <li>2312312</li>
+            </ol>
           </el-card>
         </el-timeline-item>
       </el-timeline>
@@ -34,5 +64,9 @@ export default {
 <style rel="stylesheet/scss" lang="scss" scoped>
 .container {
   padding: 20px 40px 20px 20px;
+  h5 { color: #409EFF };
+  ol {
+    list-style: none;
+  }
 }
 </style>
