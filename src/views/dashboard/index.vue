@@ -8,14 +8,14 @@
               <li>新增菜单更新中内容</li>
             </ol>
           </el-card>
-        </el-timeline-item> 
+        </el-timeline-item>
         <el-timeline-item timestamp="1.0.3 (2019/4/27)" placement="top" color="#0bbd87">
           <el-card>
             <ol>
               <li>新增week-css:1.垂直时间轴</li>
             </ol>
           </el-card>
-        </el-timeline-item>        
+        </el-timeline-item>
         <el-timeline-item timestamp="1.0.2 (2019/4/25)" placement="top" color="#0bbd87">
           <el-card>
             <ol>
