@@ -2,7 +2,7 @@
   <div class="container">
     <div class="block">
       <el-timeline>
-        <el-timeline-item timestamp="1.0.3 (2019/4/29)" placement="top" color="#0bbd87">
+        <el-timeline-item timestamp="1.0.4 (2019/4/29)" placement="top" color="#0bbd87">
           <el-card>
             <ol>
               <li>新增菜单更新中内容</li>

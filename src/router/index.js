@@ -40,19 +40,6 @@ export const constantRouterMap = [
   },
 
   {
-    path: '/form',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        name: '基础业务组件(暂定)',
-        component: () => import('@/views/update/index'),
-        meta: { title: '个人博客(暂定)', icon: 'form' }
-      }
-    ]
-  },
-
-  {
     path: '/form1',
     component: Layout,
     children: [
@@ -83,7 +70,7 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/everycss/2019',
     name: 'Example',
-    meta: { title: 'week-CSS', icon: 'example' },
+    meta: { title: 'week-css', icon: 'example' },
     children: [
       {
         path: '2019',
@@ -102,18 +89,33 @@ export const constantRouterMap = [
     ]
   },
 
-  // {
-  //   path: '/form',
-  //   component: Layout,
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       name: 'Form',
-  //       component: () => import('@/views/form/index'),
-  //       meta: { title: 'Form', icon: 'form' }
-  //     }
-  //   ]
-  // },
+  {
+    path: '/echarts',
+    component: Layout,
+    redirect: '/echarts/bar',
+    name: 'echarts',
+    meta: { title: 'Echarts图表', icon: 'chart' },
+    children: [
+      {
+        path: 'line',
+        name: 'line',
+        meta: { title: '折线图' },
+        component: () => import('@/views/echarts/line/index')
+      },
+      {
+        path: 'bar',
+        name: 'bar',
+        meta: { title: '柱状图' },
+        component: () => import('@/views/echarts/bar/index')
+      },
+      {
+        path: 'pie',
+        name: 'pie',
+        meta: { title: '饼图' },
+        component: () => import('@/views/echarts/pie/index')
+      }
+    ]
+  },
 
   // {
   //   path: '/nested',
