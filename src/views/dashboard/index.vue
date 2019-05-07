@@ -2,6 +2,13 @@
   <div class="container">
     <div class="block">
       <el-timeline>
+        <el-timeline-item timestamp="1.0.5 (2019/5/1)" placement="top" color="#0bbd87">
+          <el-card>
+            <ol>
+              <li>新增Echarts折线图，柱状图，饼图</li>
+            </ol>
+          </el-card>
+        </el-timeline-item>
         <el-timeline-item timestamp="1.0.4 (2019/4/29)" placement="top" color="#0bbd87">
           <el-card>
             <ol>

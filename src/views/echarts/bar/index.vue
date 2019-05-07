@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div :id="id" style="width:600px;height:400px;" />
+  <div class="container">
+    <div id="main" style="height:400px;" />
   </div>
 </template>
 
@@ -35,7 +35,17 @@ export default {
           data: [5, 20, 36, 10, 10, 20]
         }]
       })
+      window.onresize = this.chart.resize
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .container {
+    padding: 30px;
+    position: relative;
+    background: #f0f2f5;
+  }
+</style>
+

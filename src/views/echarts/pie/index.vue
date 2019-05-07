@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div id="main" style="width:600px;height:400px;" />
+  <div class="container">
+    <div id="main" style="height:400px;" />
   </div>
 </template>
 
@@ -21,20 +21,51 @@ export default {
       this.chart = echarts.init(document.getElementById('main'))
       this.chart.setOption({
         title: {
-          text: '柱状图'
+          text: '某站点用户访问来源',
+          subtext: '纯属虚构',
+          x: 'center'
         },
-        tooltip: {},
-        xAxis: {
-          data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+        tooltip: {
+          trigger: 'item',
+          formatter: '{a} <br/>{b} : {c} ({d}%)'
         },
-        yAxis: {},
-        series: [{
-          name: '销量',
-          type: 'bar',
-          data: [5, 20, 36, 10, 10, 20]
-        }]
+        legend: {
+          orient: 'vertical',
+          left: 'left',
+          data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+        },
+        series: [
+          {
+            name: '访问来源',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+              { value: 335, name: '直接访问' },
+              { value: 310, name: '邮件营销' },
+              { value: 234, name: '联盟广告' },
+              { value: 135, name: '视频广告' },
+              { value: 1548, name: '搜索引擎' }
+            ],
+            itemStyle: {
+              emphasis: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: 'rgba(0, 0, 0, 0.5)'
+              }
+            }
+          }
+        ]
       })
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .container {
+    padding: 30px;
+    position: relative;
+    background: #f0f2f5;
+  }
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div id="main" style="height:400px;" />
   </div>
 </template>
@@ -21,17 +21,18 @@ export default {
       this.chart = echarts.init(document.getElementById('main'))
       this.chart.setOption({
         title: {
-          text: '柱状图'
+          text: '折线图'
         },
-        tooltip: {},
         xAxis: {
-          data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+          type: 'category',
+          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
         },
-        yAxis: {},
+        yAxis: {
+          type: 'value'
+        },
         series: [{
-          name: '销量',
-          type: 'bar',
-          data: [5, 20, 36, 10, 10, 20]
+          data: [820, 932, 901, 934, 1290, 1330, 1320],
+          type: 'line'
         }]
       })
       window.onresize = this.chart.resize
@@ -40,3 +41,10 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+  .container {
+    padding: 30px;
+    position: relative;
+    background: #f0f2f5;
+  }
+</style>
