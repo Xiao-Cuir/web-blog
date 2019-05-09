@@ -2,6 +2,13 @@
   <div class="container">
     <div class="block">
       <el-timeline>
+        <el-timeline-item timestamp="1.0.6 (2019/5/2)" placement="top" color="#0bbd87">
+          <el-card>
+            <ol>
+              <li>新增week-css第三周：简单小列表</li>
+            </ol>
+          </el-card>
+        </el-timeline-item>
         <el-timeline-item timestamp="1.0.5 (2019/5/1)" placement="top" color="#0bbd87">
           <el-card>
             <ol>

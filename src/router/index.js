@@ -81,14 +81,20 @@ export const constantRouterMap = [
           {
             path: 'timeline',
             name: 'timeline',
-            component: () => import('@/views/everycss/2019/timeline/index'),
+            component: () => import('@/views/everycss/2019/1timeline/index'),
             meta: { title: '1周：垂直时间轴代码' }
           },
+          // {
+          //   path: 'actualOne',
+          //   name: 'actualOne',
+          //   component: () => import('@/views/everycss/2019/2actualOne/index'),
+          //   meta: { title: '2周：实际业务一' }
+          // },
           {
             path: 'actualOne',
             name: 'actualOne',
-            component: () => import('@/views/everycss/2019/actualOne/index'),
-            meta: { title: '2周：实际业务一' }
+            component: () => import('@/views/everycss/2019/3simpleList/index'),
+            meta: { title: '3周：简单课程小列表' }
           }
         ]
       }
